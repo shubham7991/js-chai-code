@@ -13,7 +13,7 @@ let userEmil;   //undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id=== anotherId);
+//console.log(id=== anotherId);
 //const bigNumber = 345556445233324889n
 
 
@@ -29,8 +29,31 @@ let myObj ={
 }
 
 const myfunction = function(){
-    console.log("hello world");
+    //console.log("hello world");
 }
-console.log(typeof temp)
-console.log(typeof scoreValue);
-console.log(typeof myfunction);
+// console.log(typeof temp)
+// console.log(typeof scoreValue);
+// console.log(typeof myfunction);
+
+//++++++++++++++++++++++++++++++++++++++++++++
+
+
+// STACK(primitive),HEAP MEMORY(non-primitive)
+
+let myhomename = "shubh"
+let anothername= myhomename
+anothername = "shubham"
+console.log(myhomename)
+ console.log(anothername)
+
+ let userone ={                     //OBJECT
+    email: "user@google.com",
+    upi:"user@sbi"
+
+ }
+ let usertwo = userone
+
+ usertwo.email = "shubham@google.com"
+
+ console.log(userone.email)
+ console.log(usertwo.email)
